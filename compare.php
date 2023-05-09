@@ -6,9 +6,9 @@ $url_sbudget = "https://search-spar.spar-ics.com/fact-finder/rest/v4/search/prod
 $file_path_sbudget = "dataSbudget.json";
 
 // write to a file for testing
-#$data_sbudget = file_get_contents($url_sbudget);
-#$data_sbudget = json_decode($data_sbudget, true);
-#file_put_contents($file_path_sbudget, json_encode($data_sbudget));
+$data_sbudget = file_get_contents($url_sbudget);
+$data_sbudget = json_decode($data_sbudget, true);
+file_put_contents($file_path_sbudget, json_encode($data_sbudget));
 
 // read from saved file
 $file_data_sbudget = file_get_contents($file_path_sbudget);
@@ -18,9 +18,9 @@ $url_clever = "https://shop.billa.at/api/search/full?searchTerm=clever&storeId=0
 $file_path_clever = "dataclever.json";
 
 // write to a file for testing
-#$data_clever = file_get_contents($url_clever);
-#$data_clever = json_decode($data_clever, true);
-#file_put_contents($file_path_clever, json_encode($data_clever));
+$data_clever = file_get_contents($url_clever);
+$data_clever = json_decode($data_clever, true);
+file_put_contents($file_path_clever, json_encode($data_clever));
 
 // read from saved file
 $file_data_clever = file_get_contents($file_path_clever);
